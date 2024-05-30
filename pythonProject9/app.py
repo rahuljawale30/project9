@@ -65,6 +65,7 @@ def update_historical_data(task_id):
         message = "No record updated"
 
     return jsonify({"message": message})
+print("hello")
 
 
 if __name__ == '__main__':
