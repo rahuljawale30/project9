@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/submission" method="post">
+  <label for="task_name">First name:</label><br>
+  <input type="text" id="task_name" name="task_name">
+
+    <label for="complexity">Complexity:</label>
+
+    <select name="complexity" id="complexity" required>
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+
+    <label for="size">Size:</label>
+
+    <select name="size" id="size">
+      <option value="Small">Small</option>
+      <option value="Medium">Medium</option>
+      <option value="Large">Large</option>
+    </select>
+
+
+    <label for="task_type">Choose a car:</label>
+
+    <select name="task_type" id="task_type">
+      <option value="Development">Development</option>
+      <option value="Testing">Testing</option>
+      <option value="Documentation">Documentation</option>
+    </select>
+
+
+  <label for="estimated_effort_hours">Estimated Effort Hours</label><br>
+  <input type="number" id="estimated_effort_hours" name="estimated_effort_hours" required>
+
+    <label for="confidence_level">Confidence level:</label>
+
+    <select name="confidence_level" id="confidence_level" required>
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <label for="estimated_range_hours">Estimated Range Hours:</label><br>
+    <input type="text" id="estimated_range_hours" name="estimated_range_hours" required>
+
+    <button type="submit">Create Record</button>
+    <a href="/view_historical_data">View all Records</a>
+</form>
+
+</body>
+</html>
+
+
+

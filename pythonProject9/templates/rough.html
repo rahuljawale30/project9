@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>welcome to index page</h1>
+<table style="width:100%">
+    <thead>
+      <tr>
+          <th>Task ID</th>
+          <th>Task Name</th>
+          <th>Complexity</th>
+          <th>Size</th>
+          <th>Task Type</th>
+          <th>Estimated Effort Hours</th>
+          <th>Confidence Level</th>
+          <th>Estimated Range Hours</th>
+          <th>Actions</th>
+      </tr>
+    </thead>
+  <tbody>
+        {% for user in users %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ user.task_name }}</td>
+                <td>{{ user.complexity }}</td>
+                <td>{{ user.size }}</td>
+                <td>{{ user.task_type }}</td>
+                <td>{{ user.estimated_effort_hours }}</td>
+                <td>{{ user.confidence_level }}</td>
+                <td>{{ user.estimated_range_hours }}</td>
+
+            </tr>
+        {% endfor %}
+  </tbody>
+</table>
+
+</body>
+
+</html>
